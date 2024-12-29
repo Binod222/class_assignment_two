@@ -22,7 +22,10 @@ class DashboardBlocView extends StatelessWidget {
         children: <Widget>[
           Card(
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                context.read<DashboardCubit>().openAreaOfCircleView(context);
+
+              },
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const <Widget>[
